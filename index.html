@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>index.html</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body class="claro">
+    <header class="cabecalho">
+            <img id="minhafoto" src="img/LogoComplet.png" title="Creative Studio" alt="Logo-FCR">
+            <Section class="controles">
+                <img class="tamanho_controles" id="acender" src="img/por-do-sol.png" title="Sol" alt="Muda para claro"></a>
+                <img class="tamanho_controles" id="escuro" src="img/moon.png" title="Lua" alt="Mudar para escuro">
+            </Section>
+
+    </header>
+    <h1 id="titulo-painel">Fellipe Costa Reis</h1>
+    <nav>
+        <section id="op1">
+            <a href="DadosPessoais.html" target="_self">
+                <svg id="opcao1" xmlns:="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="grey" fill-opacity="0.24" />
+                </svg>
+                <img id="imagemop1" src="img/imgDadosPessoais.png" title="Imagem opção 1"
+                    alt="Imagem ilustrativa de dados pessoais">
+                <svg id="opcao1front" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="black" fill-opacity="0.24" />
+                </svg>
+                <h2 id="subtitulo1">Dados Pessoais</h2>
+            </a>
+        </section>
+        <section id="op2">
+            <a href="Objetivos.html" target="_self">
+                <svg id="opcao1" xmlns:="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="grey" fill-opacity="0.24" />
+                </svg>
+                <img id="imagemop2" src="img/imgObjetivos.png" title="Imagem opção 2 "
+                    alt="Imagem ilustrativa objetivo">
+                <svg id="opcao1front" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="black" fill-opacity="0.24" />
+                </svg>
+                <h2 id="subtitulo2">Objetivos</h2>
+            </a>
+        </section>
+        <section id="op3">
+            <a href="Competencias.html" target="_self">
+                <svg id="opcao1" xmlns:="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="grey" fill-opacity="0.24" />
+                </svg>
+                <img id="imagemop3" src="img/imgCompetencias.png" title="Imagem opção 3"
+                    alt="Imagem ilustrativa qualificações">
+                <svg id="opcao1front" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="black" fill-opacity="0.24" />
+                </svg>
+                <h2 id="subtitulo1">Competências</h2>
+            </a>
+        </section>
+        <section id="op4">
+            <a href="FormAcademica.html" target="_self">
+                <svg id="opcao1" xmlns:="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="grey" fill-opacity="0.24" />
+                </svg>
+                <img id="imagemop4" src="img/imgFormAcademica.png" title="Imagem opção 4"
+                    alt="Imagem ilustrativa formações acadêmicas">
+                <svg id="opcao1front" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="black" fill-opacity="0.24" />
+                </svg>
+                <h2 id="subtitulo3">Formação Acadêmica</h2>
+            </a>
+        </section>
+        <section id="op5">
+            <a href="Idiomas.html" target="_self">
+                <svg id="opcao1" xmlns:="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="grey" fill-opacity="0.24" />
+                </svg>
+                <img id="imagemop5" src="img/imgIdiomas.png" title="Imagem opção 5 " alt="Imagem ilustrativa idiomas">
+                <svg id="opcao1front" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="black" fill-opacity="0.24" />
+                </svg>
+                <h2 id="subtitulo1">Idiomas</h2>
+            </a>
+        </section>
+        <section id="op6">
+            <a href="InfoComplementares.html" target="_self">
+                <svg id="opcao1" xmlns:="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="grey" fill-opacity="0.24" />
+                </svg>
+                <img id="imagemop6" src="img/imgInfoComplementares.png" title="Imagem opção 6"
+                    alt="Imagem ilustrativa informações complementares">
+                <svg id="opcao1front" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect rx="20" fill="black" fill-opacity="0.24" />
+                </svg>
+                <h2 id="subtitulo3">Informações Complementares</h2>
+            </a>
+        </section>
+    </nav>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $("#acender").click(function(){
+            $("body").removeClass("escuro");
+            $("body").addClass("claro");
+        });
+
+        $("#escuro").click(function(){
+            $("body").removeClass("claro");
+            $("body").addClass("escuro");
+                  
+        }) 
+
+        $("#minhafoto").mouseenter(function(){
+            $(this).addClass("foto_com_mouse");
+            $(this).removeClass("foto_sem_mouse");
+
+        });
+
+        $("#minhafoto").mouseleave(function(){
+            $(this).removeClass("foto_com_mouse");
+            $(this).addClass("foto_sem_mouse");
+
+        })
+
+    });
+</script>
+
+</html> 
+
+<!--Document checking completed. No errors or warnings to show.-->

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Dados pessoais</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <header class="cabecalho"> 
+        <img class="logo" src="img/fcr.png" title="Logo - Fellipe Costa Reis" alt="Logo FCR">
+    </header>
+    <section>
+        <svg class="fundo" xmlns="http://www.w3.org/2000/svg">
+            <rect fill="grey" fill-opacity="0.24" />
+        </svg>
+        <svg id="fundoInfo" width="138" height="137" viewBox="0 0 138 137" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="138" height="137" rx="5" fill="#333333" />
+        </svg>
+        <img id="imgInfo2" src="img/imgInfo2.png" title="Informações pessoais" alt="Ilustração Informações Pessoais">
+        <h1 id="titulo-dadospessoais">Dados Pessoais</h1>
+        <ul class="agrupamento-dados">
+            <li>Telefone: (11) 980679345</li>
+            <li>E-mail: fellipe.costareis@gmail.com</li>
+            <li>Endereço: Rua Mambaí, nº 14 – São Paulo/SP</li>
+            <li>Data de Nascimento: 05/06/2003</li>
+        </ul>
+        <a href="index.html" target="_self"><img class="botao-padrao" src="img/botao.png" title="Botão voltar"
+                alt="Clique no botão para voltar"></a>
+    </section>
+    <footer id="rodape">
+        <Section class="controles">
+            <img class="tamanho_controles-id" id="acender" src="img/por-do-sol.png" title="Sol" alt="Muda para claro"></a>
+            <img class="tamanho_controles-id" id="escuro" src="img/moon.png" title="Lua" alt="Mudar para escuro">
+        </Section>
+    </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $("#acender").click(function(){
+            $("body").removeClass("escuro");
+            $("body").addClass("claro");
+        });
+
+        $("#escuro").click(function(){
+            $("body").removeClass("claro");
+            $("body").addClass("escuro");
+                  
+        }) 
+
+        $("#minhafoto").mouseenter(function(){
+            $(this).addClass("foto_com_mouse");
+            $(this).removeClass("foto_sem_mouse");
+
+        });
+
+        $("#minhafoto").mouseleave(function(){
+            $(this).removeClass("foto_com_mouse");
+            $(this).addClass("foto_sem_mouse");
+
+        })
+
+    });
+</script>
+
+</html>
+
+<!--Document checking completed. No errors or warnings to show.-->

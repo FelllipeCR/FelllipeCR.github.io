@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Informações Complementares</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <header class="cabecalho"> <img class="logo" src="img/fcr.png" title="Logo - Fellipe Costa Reis" alt="Logo FCR">
+    </header>
+    <section>
+        <svg class="fundo" width="360" height="154" viewBox="0 0 360 154" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+        </svg>
+        <img id="imgFormAcad" src="img/imgInfoComplementares1.png" title="Informações Complementares"
+            alt="Inlustração Informações Complementares">
+        <h1 id="tituloInfoComplement">Informações Complementares</h1>
+        <ul id="agrupamento-infoCoplement">
+            <li><b>2020</b> - Participação na criação de aplicativo destinado ao projeto integrador entre as áreas de TI
+                e Educação Física: Match Activities - IFSP.</li>
+            <li><b>2019</b> - Participação na criação de site destinado ao projeto integrador de TI: Monitorando - IFSP.
+            </li>
+            <li><b>2019</b> - Participação no Innovation Camp, organizado pela JA (Junior Achievement) em parceria com
+                empresas - IFSP.</li>
+            <li><b>2019 e 2018</b> - Efetiva participação na SEDCITEC (Semana de Educação, Ciência e Tecnologia),
+                realizando diversos cursos destinados a área de tecnologia (Introdução a Arduíno, Python etc.) -
+                IFSP.</li>
+            <li><b>2019 e 2018</b> - Participação na Latin Code Week, evento que ocorre simultaneamente em toda
+                América Latina, organizado pela JA (Junior Achievement) - IFSP.</li>
+            <li><b>2018</b> - Participação na criação de um jogo destinado a projeto de TI: Biosurvival - IFSP.</li>
+        </ul>
+        <a href="index.html" target="_self"><img id="botao-infocomplet" src="img/botao.png" title="Botão voltar"
+                alt="Clique no botão para voltar"></a>
+    </section>
+
+    <footer id="rodapeinfoComplet">
+        <Section class="controles">
+            <img class="tamanho_controles-id" id="acender" src="img/por-do-sol.png" title="Sol" alt="Muda para claro"></a>
+            <img class="tamanho_controles-id" id="escuro" src="img/moon.png" title="Lua" alt="Mudar para escuro">
+        </Section>
+    </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $("#acender").click(function(){
+            $("body").removeClass("escuro");
+            $("body").addClass("claro");
+        });
+
+        $("#escuro").click(function(){
+            $("body").removeClass("claro");
+            $("body").addClass("escuro");
+                  
+        }) 
+
+        $("#minhafoto").mouseenter(function(){
+            $(this).addClass("foto_com_mouse");
+            $(this).removeClass("foto_sem_mouse");
+
+        });
+
+        $("#minhafoto").mouseleave(function(){
+            $(this).removeClass("foto_com_mouse");
+            $(this).addClass("foto_sem_mouse");
+
+        })
+
+    });
+</script>
+
+
+
+</html>
+
+<!--Document checking completed. No errors or warnings to show.-->
